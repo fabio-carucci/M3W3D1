@@ -1,0 +1,108 @@
+.nav-link.dropdown-toggle::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 0.6em;
+    border: transparent;
+    margin-left: 10px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-user {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-user > div:first-of-type {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+}
+
+div.nav-user > div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: grey;
+    background-color: rgb(234, 233, 233);
+    border-radius: 50%;
+}
+
+div.user-button {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+}
+
+div.user-button > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+div.user-button > span {
+    position: absolute;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    background-color: green;
+    bottom: 2px;
+    right: 2px;
+}
+
+.nav-user div:first-child > i + span {
+    position: absolute;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    background-color: rgb(116 81 254);
+    top: 2px;
+    right: 2px; 
+}
+
+.nav-user .dropdown-toggle::after {
+    content: none;
+}
+
+div.nav-user ul.dropdown-menu li:first-child > a.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div.nav-user ul.dropdown-menu li:first-child a.dropdown-item .user-info div:last-child {
+    font-size: 0.9em;
+    color: grey;
+}
+
+div.nav-user ul.dropdown-menu li:nth-child(3) > a.dropdown-item, div.nav-user ul.dropdown-menu li:nth-child(4) > a.dropdown-item, div.nav-user ul.dropdown-menu li:nth-child(5) > a.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.nav-user ul.dropdown-menu li:nth-child(4), div.nav-user ul.dropdown-menu li:nth-child(4) span{
+    margin: -2px;
+}
+
+div.nav-user ul.dropdown-menu li:nth-child(5), div.nav-user ul.dropdown-menu li:nth-child(5) span {
+    margin: -1px;
+}
+
+div.nav-user ul.dropdown-menu li:nth-child(7) > a.dropdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div.nav-user .dropdown-menu {
+    margin-top: 5px;
+}
+
