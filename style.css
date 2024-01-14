@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Section */
+
 .nav-link.dropdown-toggle::after {
     content: '\f078';
     font-family: 'Font Awesome 5 Free';
@@ -15,13 +23,10 @@
     gap: 10px;
 }
 
-.nav-user > div:first-of-type {
+div.nav-user > div:first-child {
     position: relative;
     width: 40px;
     cursor: pointer;
-}
-
-div.nav-user > div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,5 +109,216 @@ div.nav-user ul.dropdown-menu li:nth-child(7) > a.dropdown-item {
 
 div.nav-user .dropdown-menu {
     margin-top: 5px;
+}
+
+/* Hero Section */
+
+div.hero {
+    height: 300px;
+    background-color: rgb(116 81 254);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+div.hero > * {
+    height: 100%;
+}
+
+div.hero_pic img{
+    height: 100%;
+}
+
+div.hero_welcome {
+    width: 350px;
+    height: fit-content;
+}
+
+div.hero_welcome > h2 {
+    color: white;
+}
+
+div.hero_welcome > p {
+    color: white;
+    opacity: 0.5;
+}
+
+div.hero_welcome > button {
+    padding: 12px 18px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+div.hero_welcome > button:first-of-type {
+    background-color: rgb(26 203 152);
+    color: white;
+}
+
+div.hero_welcome > button:last-of-type {
+    background-color: white;
+    color: #333;
+}
+
+/* Bar Under the Hero Section */
+
+#barUnderHero {
+    padding: 20px 200px;
+    display: flex;  
+    gap: 80px;
+}
+
+div.hero_info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+div.hero_info_icon {
+    background-color: rgb(255 238 218);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: rgb(190 103 0);
+    border-radius: 50%;
+}
+
+div.hero_info_icon + div > div:first-child {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+div.hero_info_icon + div > div:last-child {
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+/* Main section */
+
+main {
+    background-color: rgb(245 244 248);
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+    padding: 50px 0;
+}
+
+/* Carousel Section */
+
+div.carousel-title {
+    padding-bottom: 20px;
+    margin: 0 200px;
+    font-size: 1.2em;
+}
+
+#carouselRecommendedToYou {
+    margin: 0px 200px 100px 200px;
+    position: relative;
+}
+
+.custom-carousel-btn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    color: grey;
+    font-size: 0.8em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-carousel-btn-left {
+    left: -50px;
+}
+
+.custom-carousel-btn-right {
+    right: -50px;
+}
+
+/* Cards Section */
+
+.card-title {
+    font-size: 0.9em;
+}
+
+.card-title + div {
+    display: flex;
+    align-items: center;
+    font-size: 9pt;
+    gap: 7px;
+    color: grey;
+}
+
+.card-title + div > i.fa-signal {
+    font-size: 7pt;
+    color: rgb(108 62 254);
+}
+
+.reviews {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 9pt;
+}
+
+.reviews > .star-container {
+    font-size: 7pt;
+    padding-bottom: 2px;
+}
+
+.reviews > .star-container, .reviews > .star-container + div {
+    color: rgb(255 180 86);
+}
+
+.reviews > div:last-child {
+    color: grey;
+    font-size: 8pt;
+    opacity: 0.9;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-size: 10pt;
+}
+
+.price > div:first-child {
+    font-weight: bold;
+}
+
+.price > div:last-child {
+    color: grey;
+    text-decoration: line-through;
+    font-size: 8pt;
+}
+
+.card-footer {
+    font-size: 9pt;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-footer > div > img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 

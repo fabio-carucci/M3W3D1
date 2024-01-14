@@ -63,12 +63,12 @@
                         <span></span>
                     </div>
                     <div class="dropdown">
-                        <div class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#userDropdown" aria-expanded="false">
                             <div class="user-button">
                                 <img src="/W3-P1-Assets-Esercizi/assets/avatar-1.jpg" alt="user_image">
                                 <span></span>
                             </div>
-                            <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
+                            <ul id="userDropdown" class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
                                 <li>
                                     <a class="dropdown-item" href="#">
                                         <div class="user-button">
@@ -115,8 +115,361 @@
         </div>
     </nav>
 
-    
+    <div class="hero">
+        <div class="hero_welcome">
+            <h2>Welcome Web Students!</h2>
+            <p>Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+            <button>Browse Courses</button>
+            <button>Are You Instructor?</button>
+        </div>
+        <div class="hero_pic">
+            <img src="/W3-P1-Assets-Esercizi/assets/hero-img.png" alt="">
+        </div>
+    </div>
+    <div id="barUnderHero">
+        <div class="hero_info">
+            <div class="hero_info_icon">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div>
+                <div>30,000 online courses</div>
+                <div>Enjoy a variety of fresh topics</div>
+            </div>
+        </div>
+        <div class="hero_info">
+            <div class="hero_info_icon">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+            <div>
+                <div>Expert instructions</div>
+                <div>Find the right instructor for you</div>
+            </div>
+        </div>
+        <div class="hero_info">
+            <div class="hero_info_icon">
+                <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+                <div>Lifetime access</div>
+                <div>Learn on your schedule</div>
+            </div>
+        </div>
+    </div>
 
+    <main>
+    
+    <div class="carousel-title">Recommended To You</div>
+    <div id="carouselRecommendedToYou" class="carousel slide mb-4">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-graphql.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">GrapQL: introduction to graphQL for beginners</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>2h 40min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Advance</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div>3.0</div>
+                                    <div>(1,500)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$500</div>
+                                    <div>$600</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-5.jpg" alt="Brooklyn Simmons pic">
+                                    <div>Brooklyn Simmons</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-javascript.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">A Complete Beginner's
+                                    Guide to JavaScript</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>4h 10min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Advance</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div>2.0</div>
+                                    <div>(7,500)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$700</div>
+                                    <div>$850</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-1.jpg" alt="Jenny Wilson pic">
+                                    <div>Jenny Wilson</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-node.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">Beginning Node.js, Express & MongoDB Development</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>2h 00min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Intermediate</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div>4.0</div>
+                                    <div>(15,800)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$800</div>
+                                    <div>$910</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-3.jpg" alt="Sina Ray pic">
+                                    <div>Sina Ray</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-laravel.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">Laravel: The Ultimate
+                                    Beginner's Guide to Learn</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>1h 00min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Beginner</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div>5.0</div>
+                                    <div>(2,300)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$170</div>
+                                    <div>$230</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-7.jpg" alt="Sobo Rikhan pic">
+                                    <div>Sobo Rikhan</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-javascript.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">A Complete Beginner's
+                                    Guide to JavaScript</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>4h 10min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Advance</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div>2.0</div>
+                                    <div>(7,500)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$700</div>
+                                    <div>$850</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-1.jpg" alt="Jenny Wilson pic">
+                                    <div>Jenny Wilson</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-laravel.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">Laravel: The Ultimate
+                                    Beginner's Guide to Learn</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>1h 00min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Beginner</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div>5.0</div>
+                                    <div>(2,300)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$170</div>
+                                    <div>$230</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-7.jpg" alt="Sobo Rikhan pic">
+                                    <div>Sobo Rikhan</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-graphql.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">GrapQL: introduction to graphQL for beginners</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>2h 40min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Advance</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div>3.0</div>
+                                    <div>(1,500)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$500</div>
+                                    <div>$600</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-5.jpg" alt="Brooklyn Simmons pic">
+                                    <div>Brooklyn Simmons</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="W3-P1-Assets-Esercizi/assets/course-node.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="card-title">Beginning Node.js, Express & MongoDB Development</div>
+                                <div>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>2h 00min</div>
+                                    <i class="fa-solid fa-signal"></i>
+                                    <div>Intermediate</div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="star-container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <div>4.0</div>
+                                    <div>(15,800)</div>
+                                </div>
+                                <div class="price">
+                                    <div>$800</div>
+                                    <div>$910</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <img src="W3-P1-Assets-Esercizi/assets/avatar-3.jpg" alt="Sina Ray pic">
+                                    <div>Sina Ray</div>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div class="button-container">
+            <button class="custom-carousel-btn custom-carousel-btn-left" type="button" data-bs-target="#carouselRecommendedToYou" data-bs-slide="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="custom-carousel-btn custom-carousel-btn-right" type="button" data-bs-target="#carouselRecommendedToYou" data-bs-slide="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
