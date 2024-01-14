@@ -322,3 +322,50 @@ div.carousel-title {
     border-radius: 50%;
 }
 
+/* Animation that fill the bookmark for all the bookmark except the first */
+
+.card-footer i.fa-bookmark.fa-solid {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.card-footer > div:last-child:hover > i.fa-bookmark.fa-solid {
+    display: block;
+    cursor: pointer;
+}
+
+/* Animation that fill on :hover the first bookmark which remain checked */
+
+.card-footer i.fa-bookmark.fa-solid {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.card-footer label {
+    cursor: pointer; 
+    position: relative;
+}
+
+.card-footer > #bookmark-toggle:checked + label > .fa-bookmark.fa-solid {
+    display: block;
+}
+
+.card-footer > #bookmark-toggle + label:hover > .fa-bookmark.fa-solid {
+    display: block;
+}
+
+/* Animation for the card
+I set the "overflow: visible" on the .carousel-inner at MOUSEOVER using JS */
+
+.card:hover {
+    box-shadow: inset 0px 0px 3px rgba(128, 128, 128, 0.387);
+    transform: scale(1.03);
+}
